@@ -1,0 +1,51 @@
+{
+    "name": "jinzonpicpwa",
+    "version": "0.0.1",
+    "description": "rush",
+    "author": "myd <flymyd@foxmail.com>",
+    "private": true,
+    "lavas": {
+        "core": "lavas-core-vue",
+        "version": "2"
+    },
+    "scripts": {
+        "dev": "lavas dev",
+        "build": "lavas build",
+        "start": "lavas start",
+        "lint": "fecs ./ --rule --type 'vue,js,css'"
+    },
+    "dependencies": {
+        "array-includes": "^3.0.3",
+        "array.prototype.find": "^2.0.4",
+        "autoprefixer": "^7.2.5",
+        "axios": "^0.19.0",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-vue-app": "^1.3.1",
+        "body-parser": "latest",
+        "cross-env": "^5.1.1",
+        "es6-promise": "^4.1.1",
+        "iscroll": "5.1.0",
+        "lavas-core-vue": "^1.1.11",
+        "normalize.css": "^7.0.0",
+        "stoppable": "^1.0.4",
+        "vue": "latest",
+        "vue-resource": "^1.5.1",
+        "vuetify": "^1.5.18"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.5.5",
+        "babel-core": "^6.26.3",
+        "express": "^4.17.1",
+        "http-proxy-middleware": "^0.17.4",
+        "mysql": "^2.17.1"
+    },
+    "engines": {
+        "node": ">= 5.0.0",
+        "npm": ">= 3.0.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}

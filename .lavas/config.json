@@ -1,0 +1,35 @@
+{
+    "buildVersion": 1567584742500,
+    "build": {
+        "ssr": false,
+        "publicPath": "/",
+        "compress": true,
+        "cssExtract": false
+    },
+    "middleware": {
+        "all": [],
+        "server": [],
+        "client": []
+    },
+    "router": {
+        "mode": "history",
+        "base": "/",
+        "pageTransition": {
+            "type": "slide",
+            "transitionClass": "slide"
+        }
+    },
+    "errorHandler": {
+        "defaultErrorMessage": "Internal Server Error",
+        "showRealErrorMessage": false,
+        "errorPath": "/error"
+    },
+    "serviceWorker": {
+        "enable": true,
+        "swDest": "/Users/myd/pwaPicApp/dist/service-worker.js"
+    },
+    "skeleton": {
+        "enable": true,
+        "asyncCSS": true
+    }
+}
