@@ -19,7 +19,7 @@
                     </v-flex>
 
                     <v-flex xs12>
-                        <v-card color="cyan darken-2" class="white--text" @click="goCatalog">
+                        <v-card color="cyan darken-2" class="white--text" @click="goCatalog(1)">
                             <v-layout>
                                 <v-flex xs5>
                                     <v-img
@@ -77,7 +77,7 @@
                     </v-flex>
 
                     <v-flex xs12>
-                        <v-card color="blue-grey darken-2" class="white--text text-xs-right">
+                        <v-card color="blue-grey darken-2" class="white--text text-xs-right" @click="goCatalog(historyPage)">
                             <v-card-title primary-title>
                                 <div>
                                     <h1>ヒストリー OF 花鳥風月</h1>
@@ -146,11 +146,11 @@
             }
         },
         methods: {
-            goCatalog: function () {
+            goCatalog: function (pId) {
                 this.$router.push({
                     name: 'catalogId',
                     params: {
-                        id: 1
+                        id: pId
                     }
                 })
             },

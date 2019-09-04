@@ -2,74 +2,74 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
     
-import _15675847425189d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
+import _9d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
     
 
     
-import _156758474251855137ed6e9841cb3d2e0fdc0c41e7a30 from '@/pages/AutoRecommend.vue';
+import _55137ed6e9841cb3d2e0fdc0c41e7a30 from '@/pages/AutoRecommend.vue';
     
 
     
-import _156758474251855c6f69709f3037d77f40521201caf26 from '@/pages/Catalog/_id.vue';
+import _55c6f69709f3037d77f40521201caf26 from '@/pages/Catalog/_id.vue';
     
 
     
-import _1567584742518d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
+import _d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
     
 
     
-import _156758474251867830448037326425509e44bce7632b7 from '@/pages/Index.vue';
+import _67830448037326425509e44bce7632b7 from '@/pages/Index.vue';
     
 
     
-import _1567584742518038de326b0270e97f9eef95b6bc74ed7 from '@/pages/Search.vue';
+import _038de326b0270e97f9eef95b6bc74ed7 from '@/pages/Search.vue';
     
 
     
-import _15675847425187cac2d247c8f5ae5d09eb6aabe61a316 from '@/pages/ShowPicture.vue';
+import _7cac2d247c8f5ae5d09eb6aabe61a316 from '@/pages/ShowPicture.vue';
     
 
 
 let routes = [
     {
         "path": "/appshell",
-        "component": _15675847425189d49a922ebc8a6d77ca82c0a74289b98,
+        "component": _9d49a922ebc8a6d77ca82c0a74289b98,
         "meta": {},
         "name": "appshell"
     },
     {
         "path": "/auto-recommend",
-        "component": _156758474251855137ed6e9841cb3d2e0fdc0c41e7a30,
+        "component": _55137ed6e9841cb3d2e0fdc0c41e7a30,
         "meta": {},
         "name": "autoRecommend"
     },
     {
         "path": "/catalog/:id",
-        "component": _156758474251855c6f69709f3037d77f40521201caf26,
+        "component": _55c6f69709f3037d77f40521201caf26,
         "meta": {},
         "name": "catalogId"
     },
     {
         "path": "/",
-        "component": _156758474251867830448037326425509e44bce7632b7,
+        "component": _67830448037326425509e44bce7632b7,
         "meta": {},
         "name": "index"
     },
     {
         "path": "/search",
-        "component": _1567584742518038de326b0270e97f9eef95b6bc74ed7,
+        "component": _038de326b0270e97f9eef95b6bc74ed7,
         "meta": {},
         "name": "search"
     },
     {
         "path": "/show-picture",
-        "component": _15675847425187cac2d247c8f5ae5d09eb6aabe61a316,
+        "component": _7cac2d247c8f5ae5d09eb6aabe61a316,
         "meta": {},
         "name": "showPicture"
     },
     {
         "path": "/error",
-        "component": _1567584742518d2462dcf0c7beccd286c658e08187914,
+        "component": _d2462dcf0c7beccd286c658e08187914,
         "meta": {},
         "name": "error",
         "alias": "*"

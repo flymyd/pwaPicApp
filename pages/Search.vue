@@ -18,7 +18,7 @@
         <div v-if="data && data.length" class="search-content">
             <v-list two-line>
                 <template v-for="(item, index) in data">
-                    <v-list-tile avatar ripple v-bind:key="item">
+                    <v-list-tile avatar ripple v-bind:key="item" @click="showPic(item)">
                         <v-list-tile-content>
                             <v-list-tile-title>{{ item }}</v-list-tile-title>
                         </v-list-tile-content>
@@ -60,22 +60,27 @@
             };
         },
         methods: {
+            showPic: function (id) {
+                let params = {
+                    subTitle: id
+                };
+                this.$router.push({
+                    path: '/show-picture',
+                    name: 'showPicture',
+                    params: params
+                })
+            },
             async search() {
-
                 // 把数据清空
                 this.data = [];
-
                 // 显示加载动画
                 this.loading = true;
-
                 // 让当前输入框失去焦点
                 this.$el.querySelector('.search-input').blur();
-
                 // 等待 1s，模拟加载中的效果
                 await new Promise(resolve => {
                     setTimeout(resolve, 1000);
                 });
-
                 // 设置搜索结果数据
                 this.$http.get('../static/folder.json').then(res => {
                     let resData = res.body.RECORDS;
@@ -87,7 +92,6 @@
                         }
                     }
                 });
-
                 this.loading = false;
             }
         },
